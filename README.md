@@ -2,14 +2,27 @@
 Encurtador de link, onde o usuário informa qualquer url, e será gerado uma url menor. Para o processo de encurtar as urls, foi utilizado a biblioteca `pyshorteners`.
 
 ## Executar projeto
+- Crie um ambiente virtual e ative
 ```
-- Faça um clone do repositorio ou baixe.
-- Crie e ative um ambiente virtual.
-- instale as depedências - pip install -r requirements.txt.
-- Faça as migrations - python manage.py makemigrations e python manage.py migrate.
-- Execute os testes, se desejar - python manage.py test.
-- Crie um super usuário - python manage.py createsuperuser.
-- Execute aplicação - python manage.py runserver.
+python -m venv venv
+source /venv/bin/activate (linux)
+/venv/script/activate (windows)
+```
+- Instale as dependências
+```
+pip install -r requirements.txt
+```
+- Execute as migrations para o banco de dados
+```
+python manage.py migrate
+```
+- Executar os testes.
+```
+python manage.py test
+```
+- Executar aplicação.
+```
+python manage.py runserver
 ```
 
 ## Frameworks e Bibliotecas
